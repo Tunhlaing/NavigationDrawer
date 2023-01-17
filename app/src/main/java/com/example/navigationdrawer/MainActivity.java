@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "Account Clicked", Toast.LENGTH_SHORT).show();
                     AccountFragment accountFragment = new AccountFragment();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                    transaction.add(R.id.fcMain,accountFragment);
+                    transaction.replace(R.id.fcMain,accountFragment);
                     transaction.commit();
                     dlMain.close();
                     break;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "setting Clicked", Toast.LENGTH_SHORT).show();
                     SettingFragment settingFragment = new SettingFragment();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                    transaction.add(R.id.fcMain,settingFragment);
+                    transaction.replace(R.id.fcMain,settingFragment);
                     transaction.commit();
                     dlMain.close();
                     break;
